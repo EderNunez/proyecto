@@ -35,5 +35,6 @@ if (username != null) {
 
 const logout = () => {
   localStorage.removeItem("user");
+localStorage.removeItem("rol");
   window.location.href = "index.html";
 };

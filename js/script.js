@@ -18,14 +18,16 @@ const handleResponse = (response) => {
     return;
   }
   localStorage.setItem("user", username);
+localStorage.setItem("rol", user["ROL"]);
   window.location.href = "../index.html";
 };
 
-const username = localStorage.getItem("user");
+const username = localStorage.getItem("user")
+const rol = localStorage.getItem("rol")
 if (username != null) {
   document.getElementById(
     "name-user"
-  ).innerHTML = `<h4>${username}</h4><button type="button" class="login" onclick="logout()">CERRAR SESION</button>`;
+  ).innerHTML = `<h4>${username}</h4><p>${rol}</p><button type="button" class="login" onclick="logout()">CERRAR SESION</button>`;
 } else {
   document.getElementById("name-user").innerHTML =
     '<button type="button" class="login" onclick="window.location.href =\'html/Login.html\'">INICIAR SESION</button>';

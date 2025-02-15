@@ -32,6 +32,6 @@ if (username != null) {
 }
 
 const logout = () => {
-  localStorage.clear();
+  localStorage.removeItem("user");
   window.location.href = "../index.html";
 };

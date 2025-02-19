@@ -9,7 +9,7 @@ body {
   height: 100vh;
 }
 
-.login-container {
+.container {
   background-color: rgba(255, 255, 255, 0.123);
   padding: 40px;
   border-radius: 20px;
@@ -35,7 +35,7 @@ h1 {
 }
 
 .submit-btn {
-  background-color: #226ebbe1;
+  background-color: #226ebb;
   color: white;
   padding: 15px;
   border: 1px solid #000000b7;
@@ -43,8 +43,11 @@ h1 {
   cursor: pointer;
   width: 100%;
   font-size: 15px;
+  margin: 10px 0;;
 }
 
 .submit-btn:hover {
   background-color: #3498db;
 }
+
+

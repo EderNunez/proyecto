@@ -1,11 +1,13 @@
 body {
   display: flex;
   flex-direction: column;
+  background-size: cover;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f2ddbe;
 }
+
 header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -27,7 +29,7 @@ header {
   height: 3em;
   margin-right: 10px;
   margin-left: 10px;
-  border-radius: 20px;
+  border-radius: 50px;
   border: 1px solid black;
 }
 
@@ -39,7 +41,7 @@ ul {
 
 ul li {
   list-style-type: none;
-  padding: 10px;
+  padding: 15px;
 }
 
 li a {
@@ -50,7 +52,10 @@ li a {
 }
 
 li a:hover {
-  background-color: #b9a88e;
+  background-color: #f2ddbe;
+  border: #000;
+  margin: 15px 0;
+
 }
 
 .buttons {
@@ -66,12 +71,15 @@ li a:hover {
   padding-top: 0.1em;
   padding-bottom: 0.1em;
 }
-.buttons h4{
+
+.buttons h4 {
   margin-bottom: 0.5em;
 }
+
 main {
   text-align: center;
 }
+
 main img {
   height: 40vw;
   width: 100vw;
@@ -106,13 +114,14 @@ main img {
   color: white;
   text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
 }
+
 .events {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.events div img{
+.events div img {
   width: 30vw;
   height: auto;
   margin: 1em;

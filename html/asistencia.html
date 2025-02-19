@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Asistencia</title>
+    <link rel="stylesheet" href="../css/asistencia.css" />
+  </head>
+  <body>
+    <h2>Registro de Asistencia</h2>
+
+    <form id=".conteiner">
+      <input type="text" id="nombre" placeholder="Nombre" required />
+      <input type="text" id="apellido" placeholder="Apellido" required />
+      <input type="tel" id="telefono" placeholder="Teléfono" />
+      <input type="text" id="barrio" placeholder="Barrio" />
+      <input type="text" id="direccion" placeholder="Dirección" />
+      <select id="cargo">
+        <option value="Pastor">Pastor</option>
+        <option value="Anciano">Anciano</option>
+        <option value="Diácono">Diácono</option>
+        <option value="Líder">Líder</option>
+        <option value="Miembro">Miembro</option>
+      </select>
+      <label
+        >Bautizado:
+        <select id="bautizado">
+          <option value="Sí">Sí</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+      <button type="submit">Agregar</button>
+      <input
+        type="button"
+        value="volver"
+        class="submit-btn"
+        onclick="login()"
+      /><br />
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Teléfono</th>
+          <th>Barrio</th>
+          <th>Dirección</th>
+          <th>Cargo</th>
+          <th>Bautizado</th>
+          <th>Asistencia</th>
+        </tr>
+      </thead>
+      <tbody id="tablaCuerpo">
+        <!-- Aquí se agregarán los datos -->
+      </tbody>
+    </table>
+
+    <script src="js/asistencia.js"></script>
+  </body>
+</html>

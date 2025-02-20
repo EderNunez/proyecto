@@ -13,7 +13,7 @@ if (username != null) {
   button.setAttribute("type", "button");
   button.setAttribute("class", "logout");
   button.setAttribute("onclick", "logout()");
-  button.textContent = "Cerrar sesion";
+  button.textContent = "Cerrar sesión";
 
   document
     .getElementById("name-user")

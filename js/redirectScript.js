@@ -24,6 +24,7 @@ if (username != null) {
   window.location.href = "Login.html";
 }
 
+
 const logout = () => {
   localStorage.removeItem("user");
   localStorage.removeItem("rol");

@@ -1,4 +1,4 @@
-var myHeaders = new Headers();
+const myHeaders = new Headers();
 myHeaders.append(
   "x-collection-access-token",
   "c7b04cd9-bcbd-46e4-b8fb-d45faa6e3422"
@@ -50,6 +50,7 @@ const handleTableData = (result) => {
     document.getElementById("tablaCuerpo").appendChild(row);
   }
 };
+
 const add = () => {
   const nombre = document.getElementById("nombre").value;
   const apellido = document.getElementById("apellido").value;

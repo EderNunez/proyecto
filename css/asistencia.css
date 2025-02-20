@@ -1,52 +1,55 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 0;
-    background-image: url("../img/fondo1.webp");
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-image: url("../img/fondo1.webp");
+  background-color: #f4f4f4;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
 form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-input, select, button {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 button {
-    background-color: #226ebb;
-    color: white;
-    cursor: pointer;
+  background-color: #226ebb;
+  color: white;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #3498db;
+  background-color: #3498db;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
 }
 
-th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
 }
 
 th {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }

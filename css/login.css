@@ -43,13 +43,12 @@ h1 {
   cursor: pointer;
   width: 100%;
   font-size: 15px;
-  margin: 10px 0;;
+  margin: 10px 0;
 }
 
 .submit-btn:hover {
   background-color: #3498db;
 }
-
 
 footer {
   display: flex;

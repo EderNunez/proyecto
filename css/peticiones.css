@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 textarea{
     min-width: 500px;
     min-height: 200px;
@@ -8,14 +7,3 @@ textarea{
     color: rgba(61, 211, 216, 0.829);
     cursor: pointer;
 }
-=======
-textarea{
-    min-width: 500px;
-    min-height: 200px;
-}
-.enviar{
-    background-color: #226ebb;
-    color: rgba(61, 211, 216, 0.829);
-    cursor: pointer;
-}
->>>>>>> 93f4b80998295ff468f6e5a9e14aae83110e9c5a

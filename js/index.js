@@ -14,11 +14,10 @@ if (username != null) {
   button.setAttribute("onclick", "logout()");
   button.textContent = "Cerrar sesión";
 
-  document
-    .getElementById("name-user")
-    .appendChild(usernameP)
-    .appendChild(rolP)
-    .appendChild(button);
+  const nameUser = document.getElementById("name-user");
+  nameUser.appendChild(usernameP);
+  nameUser.appendChild(rolP);
+  nameUser.appendChild(button);
 } else {
   const button2 = document.createElement("button");
   button2.setAttribute("type", "button");
@@ -28,3 +27,13 @@ if (username != null) {
 
   document.getElementById("name-user").appendChild(button2);
 }
+
+const logout = () => {
+  localStorage.removeItem("user");
+  localStorage.removeItem("rol");
+  if (window.location.href == "../index.html") {
+    window.location.href = "html/Login.html";
+  } else {
+    window.location.href = "Login.html";
+  }
+};

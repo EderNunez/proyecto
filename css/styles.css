@@ -122,3 +122,19 @@ main img {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* alinea los elementos horizontalmente */
+  align-items: center; /* alinea los elementos verticalmente */
+  background-color: #333;
+  color: #fff;
+}
+
+footer > * {
+  margin: 10px;
+}

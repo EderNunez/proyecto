@@ -15,28 +15,28 @@
       </div>
       <ul>
         <li>
-          <a href=""><b>INICIO</b></a>
+          <a href="../index.html"><b>INICIO</b></a>
         </li>
         <li>
-          <a href="html/live.html"><b>EN VIVOS</b></a>
+          <a href="live.html"><b>EN VIVOS</b></a>
         </li>
         <li>
-          <a href="html/Noticias.html"><b>NOTICIAS</b></a>
+          <a href="Noticias.html"><b>NOTICIAS</b></a>
         </li>
         <li>
-          <a href="html/Eventos.html"><b>EVENTOS</b></a>
+          <a href="Eventos.html"><b>EVENTOS</b></a>
         </li>
         <li>
-          <a href="html/donaciones.html"><b>DONACIONES</b></a>
+          <a href="donaciones.html"><b>DONACIONES</b></a>
         </li>
         <li>
-          <a href="html/Ubicacion.html"><b>UBICACION</b></a>
+          <a href="Ubicacion.html"><b>UBICACION</b></a>
         </li>
         <li>
-          <a href="html/peticiones.html"><b>PETICIONES</b></a>
+          <a href="peticiones.html"><b>PETICIONES</b></a>
         </li>
         <li>
-          <a href="html/asistencia.html"><b>ASISTENCIA</b></a>
+          <a href=""><b>ASISTENCIA</b></a>
         </li>
       </ul>
       <div class="buttons" id="name-user"></div>
@@ -44,8 +44,8 @@
     <h2>Registro de Asistencia</h2>
 
     <form id=".conteiner">
-      <input type="text" id="nombre" placeholder="Nombre" required />
-      <input type="text" id="apellido" placeholder="Apellido" required />
+      <input type="text" id="nombre" placeholder="Nombre" />
+      <input type="text" id="apellido" placeholder="Apellido" />
       <input type="tel" id="telefono" placeholder="Teléfono" />
       <input type="text" id="barrio" placeholder="Barrio" />
       <input type="text" id="direccion" placeholder="Dirección" />
@@ -63,12 +63,11 @@
           <option value="No">No</option>
         </select>
       </label>
-      <button type="submit">Agregar</button>
+      <button type="button" onclick="add()">Agregar</button>
       <input
         type="button"
         value="volver"
         class="submit-btn"
-        onclick="login()"
       /><br />
     </form>
 
@@ -82,13 +81,24 @@
           <th>Dirección</th>
           <th>Cargo</th>
           <th>Bautizado</th>
-          <th>Asistencia</th>
         </tr>
       </thead>
       <tbody id="tablaCuerpo">
         <!-- Aquí se agregarán los datos -->
       </tbody>
     </table>
+    <footer>
+      <p>© 2025 Iglesia Presbiteriana de Colombia</p>
+      <div>
+        <p>Siguenos en nuestras redes sociales</p>
+        <a href="https://www.youtube.com/@ipolivos">
+          <img
+            src="../img/32px-YouTube_full-color_icon_(2017).svg.png"
+            alt="youtube-logo"
+          />
+        </a>
+      </div>
+    </footer>
     <script src="../js/redirectScript.js"></script>
     <script src="../js/asistencia.js"></script>
   </body>

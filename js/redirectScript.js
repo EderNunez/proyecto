@@ -2,11 +2,26 @@ const username = localStorage.getItem("user");
 const rol = localStorage.getItem("rol");
 console.log(username);
 if (username != null) {
-  document.getElementById(
-    "name-user"
-  ).innerHTML = `<h4>${username}</h4><p>${rol}</p><button type="button" class="logout" onclick="logout()">CERRAR SESION</button>`;
+  const usernameP = document.createElement("h4");
+  const rolP = document.createElement("p");
+  const button = document.createElement("button");
+
+  usernameP.textContent = username;
+
+  rolP.textContent = rol;
+
+  button.setAttribute("type", "button");
+  button.setAttribute("class", "logout");
+  button.setAttribute("onclick", "logout()");
+  button.textContent = "Cerrar sesion";
+
+  document
+    .getElementById("name-user")
+    .appendChild(username)
+    .appendChild(rolP)
+    .appendChild(button);
 } else {
-  window.location.href = "/html/Login.html";
+  window.location.href = "../html/Login.html";
 }
 
 const logout = () => {

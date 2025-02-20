@@ -20,8 +20,17 @@ if (username != null) {
     .appendChild(usernameP)
     .appendChild(rolP)
     .appendChild(button);
-} else {
-  location.replace("proyecto/html/Login.html");
+} else{
+  const button = document.createElement("button");
+
+  button.setAttribute("type", "button");
+  button.setAttribute("class", "logout");
+  button.setAttribute("onclick", "window.location.href = 'html/Login.html'");
+  button.textContent = "Cerrar sesión";
+
+  document
+    .getElementById("name-user")
+    .appendChild(button);
 }
 
 const logout = () => {

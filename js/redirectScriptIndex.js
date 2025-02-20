@@ -13,15 +13,24 @@ if (username != null) {
   button.setAttribute("type", "button");
   button.setAttribute("class", "logout");
   button.setAttribute("onclick", "logout()");
-  button.textContent = "Cerrar sesión";
+  button.textContent = "Iniciar sesion";
 
   document
     .getElementById("name-user")
     .appendChild(usernameP)
     .appendChild(rolP)
     .appendChild(button);
-} else {
-  location.replace("proyecto/html/Login.html");
+} else{
+  const button = document.createElement("button");
+
+  button.setAttribute("type", "button");
+  button.setAttribute("class", "logout");
+  button.setAttribute("onclick", "window.location.href = 'html/Login.html'");
+  button.textContent = "Cerrar sesión";
+
+  document
+    .getElementById("name-user")
+    .appendChild(button);
 }
 
 const logout = () => {

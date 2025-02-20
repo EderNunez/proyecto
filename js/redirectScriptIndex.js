@@ -21,8 +21,7 @@ if (username != null) {
     .appendChild(rolP)
     .appendChild(button);
 } else {
-  const currentPath = window.location.pathname;
-  window.location.href = currentPath + "html/Login.html";
+  window.location.replace("/html/Login.html");
 }
 
 const logout = () => {

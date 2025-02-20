@@ -7,5 +7,20 @@ const registrar = () => {
     alert("Las contraseñas no coinciden");
     return;
   }
-  alert("Usted ha sido registrado exitosamente");
+
+  const myHeaders = new Headers();
+  myHeaders.append(
+    "Content-Type","Aplicattion/json"
+  );
+  const requestOptions = {
+    method: "POST",
+    headers: myHeaders,
+    
+  };
+  const link =
+    "https://script.google.com/macros/s/AKfycbzgnxYvq6hkZvmKcunsxx5aT6-hi8rbXO2UO3hQhdK3kyCJPdySLswPjlRhFUWzESRJkQ/exec";
+  fetch(link,requestOptions)
+    .then((response) => response.json())
+    .then((data) => { })
+    .catch((error) => console.error(error));
 };

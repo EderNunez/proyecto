@@ -20,9 +20,7 @@
         <li>
           <a href="live.html"><b>VIDEOS</b></a>
         </li>
-        <li>
-          <a href="Noticias.html"><b>NOTICIAS</b></a>
-        </li>
+      
         <li>
           <a href="Eventos.html"><b>EVENTOS</b></a>
         </li>
@@ -63,8 +61,15 @@
           <option value="No">No</option>
         </select>
       </label>
-      <button type="button" onclick="add()">Agregar</button>
-      <input type="button" value="volver" class="submit-btn" /><br />
+      <button type="button" onclick="add()">Agregar</button><br>
+      <button type="reset">Limpiar</button>
+      <div id="deleteModal" class="modal">
+       
+                <button type="submit">Eliminar</button>
+            </form>
+        </div>
+      
+
     </form>
 
     <table>
@@ -77,6 +82,7 @@
           <th>Dirección</th>
           <th>Cargo</th>
           <th>Bautizado</th>
+          
         </tr>
       </thead>
       <tbody id="tablaCuerpo">

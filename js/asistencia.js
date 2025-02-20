@@ -112,3 +112,5 @@ const handleTableDataCurrent = (jsonReport) => {
 
   document.getElementById("tablaCuerpo").appendChild(row);
 };
+
+

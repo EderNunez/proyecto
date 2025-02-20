@@ -49,8 +49,6 @@ form .error {
   margin-bottom: 10px;
 }
 
-/* Estilos para los campos de texto */
-
 form input[type="text"],
 form input[type="email"],
 form input[type="tel"] {

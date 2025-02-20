@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f2ddbe;
+  min-height: 100vh;
 }
 
 header {
@@ -78,6 +79,7 @@ li a:hover {
 
 main {
   text-align: center;
+  flex-grow: 1;
 }
 
 main img {
@@ -124,10 +126,7 @@ main img {
 }
 
 footer {
-  position:relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  margin-top: auto;
   display: flex;
   justify-content: space-between; /* alinea los elementos horizontalmente */
   align-items: center; /* alinea los elementos verticalmente */
@@ -137,4 +136,9 @@ footer {
 
 footer > * {
   margin: 10px;
+}
+
+.img-logo {
+  width: 32px;
+  height: auto;
 }

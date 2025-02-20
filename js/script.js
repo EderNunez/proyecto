@@ -1,4 +1,3 @@
-console.log(rol)
 const asistenciaLink = document.getElementById("asistencia-link");
 if (rol !== "administrador") {
   asistenciaLink.setAttribute("href", "#");

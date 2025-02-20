@@ -1,6 +1,5 @@
 const username = localStorage.getItem("user");
 const rol = localStorage.getItem("rol");
-console.log(username);
 if (username != null) {
   const usernameP = document.createElement("h4");
   const rolP = document.createElement("p");

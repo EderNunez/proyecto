@@ -21,7 +21,7 @@ if (username != null) {
     .appendChild(rolP)
     .appendChild(button);
 } else {
-  location.replace("/html/Login.html");
+  location.replace("proyecto/html/Login.html");
 }
 
 const logout = () => {

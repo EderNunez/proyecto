@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const registrar = () => {
   const username = document.getElementById("username").value;
   const email = document.getElementById("email").value;
@@ -24,3 +25,16 @@ const registrar = () => {
     .then((data) => { })
     .catch((error) => console.error(error));
 };
+=======
+const registrar = () => {
+  const username = document.getElementById("username").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const passwordConfirm = document.getElementById("password-confirm").value;
+  if (password != passwordConfirm) {
+    alert("Las contraseñas no coinciden");
+    return;
+  }
+  alert("Usted ha sido registrado exitosamente");
+};
+>>>>>>> 93f4b80998295ff468f6e5a9e14aae83110e9c5a

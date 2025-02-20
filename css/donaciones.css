@@ -5,8 +5,8 @@ form {
   margin: 40px auto;
   padding: 40px;
   padding-left: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
+  background-color: #ffffff7a;
+  border: 1px solid #b4b2b2;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding-bottom: 50px;
 }
@@ -26,13 +26,13 @@ form select {
   width: 100%;
   margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 5px;
 }
 
 form input[type="submit"] {
   background-color: #4caf50;
-  color: #fff;
+  color: #e63333;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -69,7 +69,7 @@ form input[type="submit"] {
 
 .submit-btn {
   background-color: #226ebb;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 15px;
   border: 1px solid #000000b7;
   border-radius: 20px;

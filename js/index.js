@@ -19,13 +19,7 @@ if (username != null) {
   nameUser.appendChild(rolP);
   nameUser.appendChild(button);
 } else {
-  const button2 = document.createElement("button");
-  button2.setAttribute("type", "button");
-  button2.setAttribute("class", "logout");
-  button2.setAttribute("onclick", "location.href='html/Login.html'");
-  button2.textContent = "Iniciar Sesión";
-
-  document.getElementById("name-user").appendChild(button2);
+  window.location.href = "html/Login.html";
 }
 
 const logout = () => {

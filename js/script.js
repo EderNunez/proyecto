@@ -1,7 +1,9 @@
-const asistenciaLink = document.getElementById("asistencia-link");
-if (rol !== "administrador") {
-  asistenciaLink.setAttribute("href", "#");
-  asistenciaLink.onclick = () => {
-    alert("No tienes permiso para acceder a esta página");
-  };
+if (rol != null) {
+  const asistenciaLink = document.getElementById("asistencia-link");
+  if (rol !== "administrador") {
+    asistenciaLink.setAttribute("href", "#");
+    asistenciaLink.onclick = () => {
+      alert("No tienes permiso para acceder a esta página");
+    };
+  }
 }

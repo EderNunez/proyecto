@@ -14,11 +14,10 @@ if (username != null) {
   button.setAttribute("onclick", "logout()");
   button.textContent = "Cerrar sesión";
 
-  document
-    .getElementById("name-user")
-    .appendChild(usernameP)
-    .appendChild(rolP)
-    .appendChild(button);
+  const nameUser = document.getElementById("name-user");
+  nameUser.appendChild(usernameP);
+  nameUser.appendChild(rolP);
+  nameUser.appendChild(button);
 } else {
   window.location.href = "Login.html";
 }

@@ -1,7 +1,7 @@
 const myHeaders = new Headers();
 myHeaders.append(
   "x-collection-access-token",
-  "c7b04cd9-bcbd-46e4-b8fb-d45faa6e3422"
+  "c7b04cd9-bcbd-46e4-b8fb-d45faa6e3422" // cambia con el usuario y depende si la colección es publica o privada
 );
 
 var requestOptions = {
@@ -11,7 +11,7 @@ var requestOptions = {
 };
 
 fetch(
-  "https://api.myjson.online/v1/collections/2ebf7382-6cfe-48f2-a1d6-26baf17f71f9/records",
+  "https://api.myjson.online/v1/collections/2ebf7382-6cfe-48f2-a1d6-26baf17f71f9/records", // cambia con el usuario
   requestOptions
 )
   .then((response) => response.json())
@@ -64,13 +64,13 @@ const add = () => {
   myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
   myHeaders.append(
     "x-collection-access-token",
-    "c7b04cd9-bcbd-46e4-b8fb-d45faa6e3422"
+    "c7b04cd9-bcbd-46e4-b8fb-d45faa6e3422" // cambia con el usuario
   );
 
   const jsonReport = `{"nombre": "${nombre}", "apellido": "${apellido}", "telefono": "${telefono}", "barrio": "${barrio}", "direccion": "${direccion}", "cargo": "${cargo}", "bautizado": "${bautizado}"}`;
   const urlencoded = new URLSearchParams();
   urlencoded.append("jsonData", jsonReport);
-  urlencoded.append("collectionId", "2ebf7382-6cfe-48f2-a1d6-26baf17f71f9");
+  urlencoded.append("collectionId", "2ebf7382-6cfe-48f2-a1d6-26baf17f71f9"); // cambia con el usuario
 
   const requestOptions = {
     method: "POST",
@@ -84,6 +84,7 @@ const add = () => {
     .then((_) => handleTableDataCurrent(jsonReport))
     .catch((error) => console.log("error", error));
 };
+
 const handleTableDataCurrent = (jsonReport) => {
   const data = JSON.parse(jsonReport);
   const row = document.createElement("tr");

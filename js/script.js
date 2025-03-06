@@ -1,9 +1,6 @@
-if (rol != null) {
-  const asistenciaLink = document.getElementById("asistencia-link");
-  if (rol !== "ADMINISTRADOR") {
-    asistenciaLink.setAttribute("href", "#");
-    asistenciaLink.onclick = () => {
-      alert("No tienes permiso para acceder a esta página");
-    };
-  }
+if (rol != null && rol == "ADMINISTRADOR") {
+  const menu = document.getElementById("menu");
+  menu.appendChild(
+    '<li><a href="asistencia.html" id="asistencia-link"><b>ASISTENCIA</b></a></li>'
+  );
 }

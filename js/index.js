@@ -18,6 +18,12 @@ if (username != null) {
   nameUser.appendChild(usernameP);
   nameUser.appendChild(rolP);
   nameUser.appendChild(button);
+  if (username == "ADMINISTRADOR") {
+    const menu = document.getElementById("menu");
+    menu.appendChild(
+      '<li><a href="html/asistencia.html" id="asistencia-link"><b>ASISTENCIA</b></a></li>'
+    );
+  }
 } else {
   const button2 = document.createElement("button");
   button2.setAttribute("type", "button");

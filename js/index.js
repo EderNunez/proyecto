@@ -18,11 +18,17 @@ if (username != null) {
   nameUser.appendChild(usernameP);
   nameUser.appendChild(rolP);
   nameUser.appendChild(button);
-  if (username == "ADMINISTRADOR") {
+  if (rol == "ADMINISTRADOR") {
     const menu = document.getElementById("menu");
-    menu.appendChild(
-      '<li><a href="html/asistencia.html" id="asistencia-link"><b>ASISTENCIA</b></a></li>'
-    );
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.setAttribute("href", "html/asistencia.html");
+    a.setAttribute("id", "asistencia-link");
+    const b = document.createElement("b");
+    b.textContent = "ASISTENCIA";
+    a.appendChild(b);
+    li.appendChild(a);
+    menu.appendChild(li);
   }
 } else {
   const button2 = document.createElement("button");

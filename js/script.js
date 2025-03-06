@@ -1,6 +1,12 @@
 if (rol != null && rol == "ADMINISTRADOR") {
   const menu = document.getElementById("menu");
-  menu.appendChild(
-    '<li><a href="asistencia.html" id="asistencia-link"><b>ASISTENCIA</b></a></li>'
-  );
+  const li = document.createElement('li')
+  const a = document.createElement('a')
+  a.setAttribute('href', 'asistencia.html')
+  a.setAttribute('id', 'asistencia-link')
+  const b = document.createElement('b')
+  b.textContent = 'ASISTENCIA'
+  a.appendChild(b)
+  li.appendChild(a)
+  menu.appendChild(li);
 }

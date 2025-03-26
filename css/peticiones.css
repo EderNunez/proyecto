@@ -1,9 +1,0 @@
-textarea{
-    min-width: 500px;
-    min-height: 200px;
-}
-.enviar{
-    background-color: #226ebb;
-    color: rgba(61, 211, 216, 0.829);
-    cursor: pointer;
-}

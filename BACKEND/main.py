@@ -92,7 +92,7 @@ class Usuario(BaseModel):
 
 @app.options("/{full_path:path}")
 async def preflight_handler(full_path: str, response: Response):
-    response.headers["Access-Control-Allow-Origin"] = "http://localhost:8080"
+    response.headers["Access-Control-Allow-Origin"] = full_path
     response.headers["Access-Control-Allow-Methods"] = "POST, GET, OPTIONS"
     response.headers["Access-Control-Allow-Headers"] = "*"
     return response
